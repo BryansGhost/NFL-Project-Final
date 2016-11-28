@@ -25,7 +25,10 @@ playername7
 playername8
 playername9
 playername10
--------Screen3-------- //store player information (name, position, stats, and stat type) //(Final states that the players can be hardwired and preset into program)
+
+-------Screen3-------- 
+//store player information (name, position, stats, and stat type)
+ //(Final states that the players can be hardwired and preset into program)
 
 player1
 player2
@@ -37,6 +40,7 @@ player7
 player9
 player9
 player10
+
 -------Screen4--------
 
 //Prompt user to enter player name to add on roster
