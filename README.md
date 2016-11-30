@@ -27,6 +27,7 @@ playername9
 playername10
 
 -------Screen3-------- 
+
 //store player information (name, position, stats, and stat type)
  //(Final states that the players can be hardwired and preset into program)
 
