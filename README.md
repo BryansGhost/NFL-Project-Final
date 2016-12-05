@@ -1,19 +1,20 @@
-# NFL-Project-Final
+# NFL-Project-Final (revised for topic 4)
 Final Project repository for CST - 100
 
-Milestone Assignment 1: Storyboard 1 (NFL DRAFTING APPLICATION)
+Milestone Assignment 5: Flowchart (NFL DRAFTING APPLICATION REVISION)
+(12/1/2016)
+
+
 
 Vision:
 
 -------Screen 1--------
 
-//Opening logo stating app name
-
-//Display Graphics API
+Ask user to view players in current roster (screen 4) or players that can be picked (screen 2)
 
 -------Screen 2--------
 
-//show user a list of players
+//Show players that can be picked 
 
 playername1
 playername2
@@ -26,38 +27,41 @@ playername8
 playername9
 playername10
 
+//End statement with asking if user would like to add player to roster (take to screen 4 after
+adding player to roster)
 -------Screen3-------- 
 
-//store player information (name, position, stats, and stat type)
- //(Final states that the players can be hardwired and preset into program)
+//Selected Player stats will be shown here
 
-player1
-player2
-player3
-player4
-player5
-player6
-player7
-player9
-player9
-player10
+
+//User can then choose to add player to roster or view list again
+
+//(return screen 2 if user wants to see list)
+
+//(go to screen 4 if user wants to add this player to
 
 -------Screen4--------
 
-//Prompt user to enter player name to add on roster
+//Current roster (shows updated current roster whenever screen requested)
 
-//Prompt user to enter where they would like to go next (Remove player on screen five or view current roster on screen six)
+//Ask user to view player list (screen) or see their player ranking/Edit screen (Screen 5)
 
 -------Screen5--------
 
-//Prompt user to enter who they would like to remove from the roster of players in current list
+//Ranks current players in roster from best to worst
 
-(current list will have preset players as well)
+//Asks if user would like to remove a shown player string from roster (take to screen 6)
+
+//Asks if user would like to view roster as is (Screen 4) or see available players (screen 2)
+ 
 
 -------Screen6--------
 
-//Display list of current set Roster
+//Ask user to enter player they wish to remove (player string wil have numbers next to name. 
+user will type number of player to remove)
 
-//User can enter whether they wish to return to screen five to remove more players or screen four to add more
+//Ask if user would like to view new roster (screen 4) or see available players (screen 2)
+
+
 
 ------END PROGRAM-----
