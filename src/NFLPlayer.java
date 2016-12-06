@@ -1,64 +1,54 @@
-import java. util.Scanner;
 
 public class NFLPlayer {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
+
+	// Personal statistics
+	private int heightInches;
+	private int heightFeet;
+	private int age;
+	private double weight;
+	
+	private int birthDay;
+	private int birthMonth;
+	private int birthYear;
+	
+	private String birthPlace;
+	private String highschool;
+	private String college;
+	
+	// Gameplay statistics
+	private String team;
+	private String teamCity;
+	private String position;
+	private int jerseyNumber;
+	private int experience;
+	
+	private int touchdowns;
+	private int interceptions;
+	private int passingAttempts;
+	private int completedPasses;
+	private int passingYards;
+	private int runningYards;
+	private int recievingYards;
+	private int tackles;
+	private int sacks;
+	
+	
+	// Method for Quarterback rating
+	public double QBRating(int touchdowns, int passingAttempts, int completedPasses,
+			int passingYards, int interceptions) {
 		
-		/* Player list and statistics
-		 * 
-		 * Stats of players are preset here and are as is */
-		
-		// Player 1
-		// Personal statistics
-		String  Trevor_Siemian = "Trevor Siemian"; // Player Name	
-		
-		int heightInches = 3; // Height in inches
-		int heightFeet = 6; // Height in feet
-		int age = 24; // Age in years
-		double weight = 220.0; // Weight in pounds
-		int birthDay = 26; // Day of birth
-		int birthMonth = 12; // Month of birth
-		int birthYear = 1991; // Year of birth
-		String birthPlace = "Windermere, FL"; // PLace of birth (city and state)
-		String highschool = "Olympia HS [Orlando, FL]"; // High school player graduated from 
-		String college = "Northwestern"; // College attended
-		String gender = "he"; // PLayers gender (for sentence structure)
-		
-		// Game statistics
-		String team = "Broncos"; // Player Team
-		String teamCity = "Denver"; // City of Team
-		String position = "Quarterback"; // PLayer Position
-		int jerseyNumber = 13; // Number on PLayer's jersey
-		int experience = 2; // Seasons completed
-		
-		int touchdowns = 12; // Touchdowns this season
-		int interceptions = 7; // Interceptions thrown this season
-		double passingYards = 2028.0; // Seasonal passing yards
-		double rating = 85.0; // PLayer's overall rating (according to NFL official website)
-		
-		// Display information on player
-		System.out.print("Press ( 1 ) for statistics of player 1: ");
-			int playerChoice = input.nextInt(); // asks user to show stats for player of choice
-			
-			if (playerChoice == 1) {
-				System.out.println("You have chosen " + Trevor_Siemian + " from the " + teamCity + " " +
-				team + ". ");
-				System.out.println(Trevor_Siemian + " is " + heightFeet + " feet, " + heightInches + " inches, weighing "
-				+ weight + " pounds.");
-				System.out.println(gender + " is " + age + " years old, born on " + birthMonth + "/" +
-				birthDay + "/" + birthYear + " in " + birthPlace + ", graduating from " + highschool);
-				System.out.println("and later" + " attended " + college + " College.");
-				System.out.println("____________________________________________________");
-				System.out.println("NFL Stats:");
-				System.out.println(position + " " + Trevor_Siemian + ", number " + jerseyNumber + ", has thrown " +
-				touchdowns + " touchdowns, and " + interceptions + " interceptions with a total of " + 
-				passingYards + " passing yards.");
-				System.out.println("These stats determine " + Trevor_Siemian + "'s has a total rating of: " +
-				rating);
-			}
-			else {
-				System.out.println("Invalid Input!");
-				System.exit(1);
-		}
+		 	double a = (completedPasses / passingAttempts - 0.3) * 5;
+		 	double b = (passingYards / passingAttempts - 3) * 0.25;
+		 	double c = (touchdowns / passingAttempts) * 25;
+		 	double d = 2.375 - (interceptions / passingAttempts * 25);
+		 	double ratingQB = ((a + b + c + d) / 6) * 100;
+		 	{
+			return ratingQB;
+			}	
+		 	
 	}
+			
+	
+	
+
 }
