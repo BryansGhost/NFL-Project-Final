@@ -1,6 +1,6 @@
-public class NFLPlayer {
-	private PlayerManager[] player;	
+public class NFLPlayer extends PlayerManager {
 	
+	private PlayerManager[] player;	
 	
 	// Characteristics
 	public int heightInches;
@@ -23,6 +23,14 @@ public class NFLPlayer {
 	public int jerseyNumber;
 	public int experience;
 	
+	// Call to celebration method
+	boolean drafted;
+	public static String ifDrafted(drafted == true) {
+		Celebration.celebrate();
+		return;
+	}
+	
+	
 	public static void CreatePlayers(String myPlayers[]) {
 		String[] myPlayers = new String[6]; 
 		myPlayers[0] = "Drew Brees"; //Quarter back
@@ -32,6 +40,4 @@ public class NFLPlayer {
 		myPlayers[4] = "Landon Collins"; // Defensive Back
 		myPlayers[5] = "Dontae Johnson"; //Punt returner
 		}
-	
-	
 	}
